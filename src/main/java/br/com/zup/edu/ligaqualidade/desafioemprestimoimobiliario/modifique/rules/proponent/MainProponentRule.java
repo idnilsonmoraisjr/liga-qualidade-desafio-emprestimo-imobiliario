@@ -8,6 +8,7 @@ public class MainProponentRule implements ProponentAcceptanceRule {
 
     @Override
     public boolean accept(List<Proponent> proponents) {
-        return proponents.stream().filter(Proponent::getMain).count() == 1;
+        return proponents.stream()
+        		.filter(Proponent::getMain).count() == 1;
     }
 }
