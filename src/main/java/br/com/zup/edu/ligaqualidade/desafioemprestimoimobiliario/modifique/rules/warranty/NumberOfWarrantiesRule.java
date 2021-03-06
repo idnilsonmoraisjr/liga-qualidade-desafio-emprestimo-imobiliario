@@ -8,6 +8,6 @@ public class NumberOfWarrantiesRule implements WarrantyAcceptanceRule {
 
     @Override
     public boolean accept(List<Warranty> warranties) {
-        return warranties.size() >= 1;
+        return !warranties.isEmpty();
     }
 }
